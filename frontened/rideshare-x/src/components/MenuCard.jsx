@@ -2,7 +2,7 @@ import React from "react";
 
 const data = [
   {
-    img: "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_500,q_30,w_1900/hellofresh_s3/image/6385270d652bc19f67028bdc-520fff39.jpg",
+    img: "https://img.hellofresh.com/q_60,w_1920,f_auto,c_limit,fl_lossy/w_161,q_auto,f_auto,dpr_2/hellofresh_website/us/cms/ER/app-install-login/app-start-screen.png",
     name: "Crispy Kickin’ Cayenne Chicken Cutlets",
     addition: "with Mashed Potatoes, Green Beans & a Honey Drizzle",
     desc: "Are you the type of person who only goes to game nights on the off chance that Buffalo wings will be served? We’re with you, and that’s why our chefs took the beloved dish from messy app to epic weeknight dinner. First, chicken is coated in a cheesy, Buffalo-spiced panko breadcrumbs. It’s roasted to juicy crunchiness, then drizzled with creamy, tangy sauce. Oh, and did we mention there are buttery roasted green beans and creamy scallion mashed potatoes on the side?! Yeah, it’s safe to say this dish is a slam dunk.",
