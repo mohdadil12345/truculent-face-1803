@@ -9,7 +9,7 @@ function AllRoutes() {
    <div>
     <Routes>
         <Route path = "/" element =  {<Home/>}/>
-        <Route path = "/login" element =  {<Login/>}/>
+        <Route path="/login" element={<Login />} />
         <Route path = "/register" element =  {<Signup/>}/>
     </Routes>
    </div>
