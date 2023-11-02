@@ -14,10 +14,6 @@ app.use(cors())
 
 
 
-// app.use("/",  (req, res) => {
-//     res.send({msg : "Welcome To Home Page"})
-// })
-
 app.use("/users", userRouter)
 
 
