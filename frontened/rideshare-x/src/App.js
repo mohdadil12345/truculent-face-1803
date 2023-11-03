@@ -8,7 +8,7 @@ function App() {
     <div>
       {/* <Navbar/>
       <AllRoutes/> */}
-      {/* <Plan/> */}
+      <Plan/>
     </div>
   );
 }
