@@ -12,7 +12,8 @@ function Login() {
 
   const handleSubmit = () => {
     axios
-      .post("https://ride-share-backend-pw1v.onrender.com/users/login",
+      .post(
+        "https://ride-share-backend-pw1v.onrender.com/users/login",
         newObj,
         {
           headers: {
@@ -31,21 +32,28 @@ function Login() {
       });
   };
   return (
-    <div>
-      <h1>Login</h1>
-      <input
-        type="email"
-        placeholder="email@example.com"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <input type="submit" onClick={handleSubmit} />
+    <div className="login-page">
+      <div>
+        <img src="/assets/food1.jpg" alt="" />
+      </div>
+      <div className="login-info">
+        <div className="log-bg">
+          <h1>Login</h1>
+          <input
+            type="email"
+            placeholder="email@example.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input type="submit" onClick={handleSubmit} />
+        </div>
+      </div>
     </div>
   );
 }
