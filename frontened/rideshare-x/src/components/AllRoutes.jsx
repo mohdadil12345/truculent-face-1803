@@ -4,6 +4,7 @@ import Login from './Login'
 import Signup from './Signup'
 import { Route, Routes } from 'react-router-dom'
 import MenuCard from './MenuCard'
+import Address from './Address'
 
 function AllRoutes() {
   return (
@@ -13,6 +14,7 @@ function AllRoutes() {
         <Route path="/login" element={<Login />} />
         <Route path = "/register" element =  {<Signup/>}/>
         <Route path = "/menu" element =  {<MenuCard/>}/>
+        <Route path='/address' element={<Address/>}/>
     </Routes>
    </div>
   )
