@@ -115,44 +115,71 @@ const Plan = () => {
                                             backgroundColor: no_of_people === 2 ? 'green' : '',
                                         }}
                                         onClick={() => { setNoOfPeople(2) }}>2</button>
-                                    <button className={no_of_people === 4 ? 'selected' : 'not-selected'} onClick={() => { setNoOfPeople(4) }}>4</button>
+                                    <button
+                                        style={{
+                                            backgroundColor: no_of_people === 4 ? 'green' : '',
+                                        }}
+                                        className={no_of_people === 4 ? 'selected' : 'not-selected'} onClick={() => { setNoOfPeople(4) }}>4</button>
                                 </div>
                             </div>
                             <div className='meals-per-week custDiv'>
                                 <span>Meals per week</span>
                                 <div className='btns'>
-                                    <button className='meals-per-week' onClick={() => { setMealPerWeek(2) }}>2</button>
-                                    <button className='meals-per-week' onClick={() => { setMealPerWeek(3) }}>3</button>
-                                    <button className='meals-per-week' onClick={() => { setMealPerWeek(4) }}>4</button>
-                                    <button className='meals-per-week' onClick={() => { setMealPerWeek(5) }}>5</button>
-                                    <button className='meals-per-week' onClick={() => { setMealPerWeek(6) }}>6</button>
+                                    <button className='meals-per-week'
+                                        style={{
+                                            backgroundColor: mealsperweek === 2 ? 'green' : '',
+                                        }}
+                                        onClick={() => { setMealPerWeek(2) }}>2</button>
+                                    <button className='meals-per-week'
+                                        style={{
+                                            backgroundColor: mealsperweek === 3 ? 'green' : '',
+                                        }}
+                                        onClick={() => { setMealPerWeek(3) }}>3</button>
+                                    <button className='meals-per-week'
+                                        style={{
+                                            backgroundColor: mealsperweek === 4 ? 'green' : '',
+                                        }}
+                                        onClick={() => { setMealPerWeek(4) }}>4</button>
+                                    <button className='meals-per-week'
+                                        style={{
+                                            backgroundColor: mealsperweek === 5 ? 'green' : '',
+                                        }}
+                                        onClick={() => { setMealPerWeek(5) }}>5</button>
+                                    <button className='meals-per-week'
+                                        style={{
+                                            backgroundColor: mealsperweek === 6 ? 'green' : '',
+                                        }}
+                                        onClick={() => { setMealPerWeek(6) }}>6</button>
                                 </div>
                             </div>
                         </div>
 
-                        <span className={`${selected.length > 0 ? 'preference-selected' : 'preference-not-selected'}`}>
-                            {
-                                selected.length > 0 ? selected.map((item, index) => {
-                                    return (
-                                        <span key={index + 1}>{item}</span>
-                                    )
-                                }) : <p>Choose your plan</p>
-                            }
+                        <div className='total'>
 
-                            <div>
-                                <p>{mealsperweek} meals for {no_of_people} people per week</p>
-                                <p>{mealsperweek * no_of_people} total servings</p>
-                                <hr />
-                                <div className='total summary'>
-                                    <p>Box price <span>${mealsperweek * no_of_people * 20}</span></p>
-                                    <p>Price per serving <span>${mealsperweek * no_of_people * 2}</span> </p>
-                                    <p>Total Box <span>${mealsperweek * no_of_people * 20 + mealsperweek * no_of_people * 2}</span> </p>
 
+                            <span className={` both ${selected.length > 0 ? 'preference-selected' : 'preference-not-selected'}`}>
+                                {
+                                    selected.length > 0 ? selected.map((item, index) => {
+                                        return (
+                                            <span key={index + 1}>{item}</span>
+                                        )
+                                    }) : <p>Choose your plan</p>
+                                }
+
+                                <div className='description'>
+                                    <p>{mealsperweek} meals for {no_of_people} people per week</p>
+                                    <p>{mealsperweek * no_of_people} total servings</p>
+                                    <hr />
+                                    <div className='total summary'>
+                                        <p>Box price <span>${mealsperweek * no_of_people * 20}</span></p>
+                                        <p>Price per serving <span>${mealsperweek * no_of_people * 2}</span> </p>
+                                        <p>Total Box <span>${mealsperweek * no_of_people * 20 + mealsperweek * no_of_people * 2}</span> </p>
+
+                                    </div>
                                 </div>
-                            </div>
 
-                        </span>
-
+                            </span>
+                        </div>
 
                     </section>
                 </div>

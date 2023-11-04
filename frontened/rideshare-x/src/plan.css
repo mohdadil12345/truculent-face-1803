@@ -5,18 +5,16 @@
 }
 
 .main-container {
-
     width: 90%;
     margin: auto;
-    border: 2px solid red;
+   
     height: 100vh;
     padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
 
-.heading {
-    text-align: center;
-}
+
 
 .left-right-content {
     display: flex;
@@ -24,10 +22,7 @@
 
 }
 
-.left-content {
-    border: 2px solid blue;
-    /* width: 50%; */
-}
+
 
 .top-content {
     margin-top: 10px;
@@ -35,9 +30,7 @@
 
 }
 
-/* .top-content>p {
-    line-height: 25px;
-} */
+
 
 .select-preference-container {
     display: grid;
@@ -66,27 +59,21 @@
 
 
 .vl {
-    border-left: 1px dashed green;
+    border-left: 2px dashed rgb(16, 16, 16);
     height: 500px;
     position: absolute;
     left: 50%;
-    margin-left: -3px;
-    top: 12px;
+    margin-left: 20px;
+    top: 80px;
 }
 
-/* .top-content>#choose-preference-heading {
-    text-align: center;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgb(36, 36, 36);
-    font-weight: 500;
-} */
 .heading {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
     color: rgb(36, 36, 36);
     font-weight: 500;
+    /* font-family: Agrandir, Verdana, Geneva, sans-serif; */
 }
 
 .top-content>#preference-para {
@@ -100,7 +87,7 @@
 
 /* right-content */
 .right-content {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
     text-align: center;
 
@@ -120,7 +107,7 @@
 
 .customize-container {
     padding: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -129,18 +116,67 @@
     width: 70%;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.custDiv>span {
+    color: rgb(36, 36, 36);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+
 }
 
 .people-btns>button {
-    width: 8rem;
+    width: 7.9rem;
     padding: 5px;
     border-radius: 4px;
-    height: 30px;
-    border-style: solid;
+    height: 35px;
+    /* border-style: solid; */
 
     border-width: 1px;
     transition: left 0.3s cubic-bezier(0, 0, 0.2, 1) 0s;
     font-weight: bold;
     margin-left: -1px;
 
+}
+
+.btns>button {
+    width: 3.2rem;
+    padding: 5px;
+    border-radius: 4px;
+    height: 35px;
+    border-width: 1px;
+    transition: left 0.3s cubic-bezier(0, 0, 0.2, 1) 0s;
+    font-weight: bold;
+    margin-left: -1px;
+}
+
+.preference-not-selected>p {
+    color: rgb(118, 118, 118);
+    font-size: 16px;
+    font-weight: 700;
+
+    font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+.total {
+    border: 1px solid rgba(100, 100, 111, 0.2) ;
+    width: 70%;
+    margin: auto;
+    border-radius: 3px;
+    padding: 10px;
+    
+}
+
+.both {
+    /* text-align: left; */
+    line-height: 40px;
+}
+
+.description{
+    font-size: 20px;
 }
