@@ -6,9 +6,9 @@ import Plan from './components/Plan';
 function App() {
   return (
     <div>
-      <Navbar/>
-      <AllRoutes/>
-      {/* <Plan/> */}
+      {/* <Navbar/>
+      <AllRoutes/> */}
+      <Plan/>
     </div>
   );
 }
