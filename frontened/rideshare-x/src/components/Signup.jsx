@@ -33,26 +33,55 @@ function Signup() {
       });
   };
   return (
-    <div>
-      <h2>Create a HelloFresh account</h2>
-      <input
-        type="text"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <input type="Submit" value="Continue" onClick={handleContinue} />
+    <div className="login-page">
+      <div>
+        <img src="/assets/food1.jpg" alt="" />
+      </div>
+      <div className="login-info">
+        <div className="log-bg">
+          <h1>Create a HelloFresh account</h1>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="email@example.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input type="Submit" value="Continue" onClick={handleContinue} />
+        </div>
+      </div>
     </div>
   );
 }
 
 export default Signup;
+
+// <div>
+//   <h2>Create a HelloFresh account</h2>
+//   <input
+//     type="text"
+//     value={username}
+//     onChange={(e) => setUsername(e.target.value)}
+//   />
+//   <input
+//     type="email"
+//     value={email}
+//     onChange={(e) => setEmail(e.target.value)}
+//   />
+//   <input
+//     type="password"
+//     value={password}
+//     onChange={(e) => setPassword(e.target.value)}
+//   />
+//   <input type="Submit" value="Continue" onClick={handleContinue} />
+// </div>
