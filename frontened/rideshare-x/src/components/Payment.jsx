@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const PaymentContainer = styled.div`
   display: flex;
@@ -43,11 +44,15 @@ const Payment = () => {
 
     let address_ls = JSON.parse(localStorage.getItem("address"))
     let meal_ls = JSON.parse(localStorage.getItem("meal"))
+
+    const navigate = useNavigate()
   
     const handleSubmit = (e) => {
       e.preventDefault();
       // Handle payment logic here
       alert('Order Placed Successfully')
+
+      navigate('/')
     };
   
     return (
@@ -106,7 +111,7 @@ const Payment = () => {
 
             <div>
               <p>
-                <b>₹{meal_ls[meal_ls.length-1].mealPrice}</b>
+                <b>${meal_ls[meal_ls.length-1].mealPrice}</b>
               </p>
             </div>
           </div>
@@ -123,7 +128,7 @@ const Payment = () => {
 
             <div>
               <p>
-                <b>₹{meal_ls[meal_ls.length-1].deliveryCharge}</b>
+                <b>${meal_ls[meal_ls.length-1].deliveryCharge}</b>
               </p>
             </div>
           </div>
@@ -139,7 +144,7 @@ const Payment = () => {
 
             <div>
               <p style={{ fontSize: "20px" }}>
-                <b>₹{meal_ls[meal_ls.length-1].mealPrice + meal_ls[meal_ls.length-1].deliveryCharge}</b>
+                <b>${meal_ls[meal_ls.length-1].mealPrice + meal_ls[meal_ls.length-1].deliveryCharge}</b>
               </p>
             </div>
           </div>
