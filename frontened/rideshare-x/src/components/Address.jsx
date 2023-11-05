@@ -3,8 +3,11 @@ import { styled } from "styled-components";
 import {useNavigate} from 'react-router-dom'
 
 const Address = () => {
-  const [mealPrice, setMealPrice] = useState(3500);
-  const [deliveryCharge, setDeliveryCharge] = useState(99);
+
+  let plan_meal_ls = JSON.parse(localStorage.getItem("plan_meal"))
+
+  const [mealPrice, setMealPrice] = useState(plan_meal_ls[plan_meal_ls.length-1].mealDet.boxPrice);
+  const [deliveryCharge, setDeliveryCharge] = useState(5);
 
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
@@ -58,7 +61,7 @@ const Address = () => {
 
   return (
     <div style={{ padding: "20px", marginTop:'30px' }}>
-      <h2 style={{ marginLeft: "22%", marginBottom:'-105px' }}>Shipping Information </h2>
+      <h2 style={{ marginLeft: "7%", marginBottom:'-95px' }}>Shipping Information </h2>
       <main style={{ display: "flex", justifyContent: "space-around", marginTop:'70px' }}>
         <DIV
           style={{
@@ -123,16 +126,16 @@ const Address = () => {
             id="prod-details"
           >
             <div>
-              <h6 style={{ fontSize: "15px" }}>Meat & Veggies plan</h6>
+              <h6 style={{ fontSize: "15px" }}>{plan_meal_ls[plan_meal_ls.length-1].selected.map((item)=> <span>{`${item+" "}`}</span>)}</h6>
               <p>
-                3 Meals per week for 2 people <br />
-                (6 servings total)
+                {plan_meal_ls[plan_meal_ls.length-1].mealDet.aboutMeal}<br />
+                ({plan_meal_ls[plan_meal_ls.length-1].mealDet.serving})
               </p>
             </div>
 
             <div>
               <p>
-                <b>₹{mealPrice}</b>
+                <b>${mealPrice}</b>
               </p>
             </div>
           </div>
@@ -149,7 +152,7 @@ const Address = () => {
 
             <div>
               <p>
-                <b>₹{deliveryCharge}</b>
+                <b>${deliveryCharge}</b>
               </p>
             </div>
           </div>
@@ -165,7 +168,7 @@ const Address = () => {
 
             <div>
               <p style={{ fontSize: "20px" }}>
-                <b>₹{mealPrice + deliveryCharge}</b>
+                <b>${mealPrice + deliveryCharge}</b>
               </p>
             </div>
           </div>
@@ -208,7 +211,7 @@ const Address = () => {
         style={{
           width: "44%",
           height: "45px",
-          marginLeft: "9.1%",
+          marginLeft: "7%",
           backgroundColor: "#067a46",
           color: "white",
           fontWeight: "700",
