@@ -1,14 +1,65 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
+import {useNavigate} from 'react-router-dom'
 
 const Address = () => {
   const [mealPrice, setMealPrice] = useState(3500);
   const [deliveryCharge, setDeliveryCharge] = useState(99);
 
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [add, setAdd] = useState("")
+  const [addDetails, setAddDetails] = useState("")
+  const [city, setCity] = useState("")
+  const [pinCode, setPinCode] = useState("")
+  const [state, setState] = useState("")
+  const [phone, setPhone] = useState("")
+
+  const [details, setDetails] = useState({})
+
+  let address_ls = JSON.parse(localStorage.getItem("address")) || []
+
+  let meal_ls = JSON.parse(localStorage.getItem("meal")) || []
+
+  const navigate = useNavigate()
+
+  function handleDetails(e) {
+    e.preventDefault()
+
+    setDetails({
+      firstName,
+      lastName,
+      add,
+      addDetails,
+      city,
+      pinCode,
+      state,
+      phone
+    })
+
+    address_ls.push({firstName,
+      lastName,
+      add,
+      addDetails,
+      city,
+      pinCode,
+      state,
+      phone})
+
+      meal_ls.push({mealPrice, deliveryCharge})
+
+      localStorage.setItem("address", JSON.stringify(address_ls))
+      localStorage.setItem("meal", JSON.stringify(meal_ls))
+
+    navigate('/payment')
+  }
+
+  console.log(details);
+
   return (
-    <div style={{ padding: "20px" }}>
-      <h2 style={{ marginLeft: "22%", marginBottom:'-30px' }}>Shipping Information </h2>
-      <main style={{ display: "flex", justifyContent: "space-around" }}>
+    <div style={{ padding: "20px", marginTop:'30px' }}>
+      <h2 style={{ marginLeft: "22%", marginBottom:'-105px' }}>Shipping Information </h2>
+      <main style={{ display: "flex", justifyContent: "space-around", marginTop:'70px' }}>
         <DIV
           style={{
             display: "flex",
@@ -27,18 +78,18 @@ const Address = () => {
               justifyContent: "center",
             }}
           >
-            <input type="text" placeholder="  First Name" />
-            <input type="text" placeholder="  Street Address" />
-            <input type="text" placeholder="  City" />
-            <select>
+            <input type="text" placeholder="  First Name" value={firstName} onChange={(e)=> setFirstName(e.target.value)} />
+            <input type="text" placeholder="  Street Address" value={add} onChange={(e)=> setAdd(e.target.value)} />
+            <input type="text" placeholder="  City" value={city} onChange={(e)=> setCity(e.target.value)} />
+            <select value={state} onChange={(e)=> setState(e.target.value)}>
               <option value="">Select State</option>
-              <option value="assam">Assam</option>
-              <option value="gujarat">Gujarat</option>
-              <option value="jharkhand">Jharkhand</option>
-              <option value="karnataka">Karnataka</option>
-              <option value="maharashtra">Maharashtra</option>
-              <option value="punjab">Punjab</option>
-              <option value="westbengal">West Bengal</option>
+              <option value="Assam">Assam</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Punjab">Punjab</option>
+              <option value="West Bengal">West Bengal</option>
             </select>
           </div>
 
@@ -52,14 +103,14 @@ const Address = () => {
             }}
             id="div-2"
           >
-            <input type="text" placeholder="  Last Name" />
-            <input type="text" placeholder="  Apt,suite,floor" />
-            <input type="text" placeholder="  Zip Code" />
-            <input type="text" placeholder="  Phone Number" />
+            <input type="text" placeholder="  Last Name" value={lastName} onChange={(e)=> setLastName(e.target.value)}/>
+            <input type="text" placeholder="  Apt,suite,floor" value={addDetails} onChange={(e)=> setAddDetails(e.target.value)}/>
+            <input type="text" placeholder="  Zip Code" value={pinCode} onChange={(e)=> setPinCode(e.target.value)}/>
+            <input type="text" placeholder="  Phone Number" value={phone} onChange={(e)=> setPhone(e.target.value)}/>
           </div>
         </DIV>
 
-        <div id="oder-container">
+        <div style={{boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px', padding:'30px', borderRadius:'10px'}} id="oder-container">
           <h2>Order Summary</h2>
 
           <div
@@ -163,13 +214,16 @@ const Address = () => {
           fontWeight: "700",
           fontSize: "15px",
           border:'0px',
-          borderRadius:'5px'
+          borderRadius:'5px',
+          marginTop:'-20px'
+
         }}
+        onClick={handleDetails}
       >
         Next Step
       </button>
 
-      <h2 style={{ textAlign: "center", marginTop: "45px" }}>FAQ</h2>
+      <h2 style={{ textAlign: "center", marginTop: "100px" }}>FAQ</h2>
       <div>
         <div
           style={{

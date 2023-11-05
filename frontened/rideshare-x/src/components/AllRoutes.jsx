@@ -5,6 +5,7 @@ import Signup from './Signup'
 import { Route, Routes } from 'react-router-dom'
 import MenuCard from './MenuCard'
 import Address from './Address'
+import Payment from './Payment'
 
 function AllRoutes() {
   return (
@@ -15,6 +16,7 @@ function AllRoutes() {
         <Route path = "/register" element =  {<Signup/>}/>
         <Route path = "/menu" element =  {<MenuCard/>}/>
         <Route path='/address' element={<Address/>}/>
+        <Route path='/payment' element={<Payment/>}/>
     </Routes>
    </div>
   )
