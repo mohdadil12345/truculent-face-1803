@@ -72,7 +72,7 @@ const Plan = () => {
 
     return (
 
-        <div style={{border:'2px solid blue'}} className="main-container">
+        <div className="main-container">
 
             <div className='item-container'>
                 <div className='heading'><h1>Personalize your plan</h1></div>
