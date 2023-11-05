@@ -113,7 +113,7 @@ const Plan = () => {
                         </div>
 
                     </section>
-                    <div class="vl"></div>
+                    <div style={{marginTop:'80px', height:'450px'}} class="vl"></div>
                     <section className='right-content'>
                         <div className='heading-div'><h1 className='heading'>2. Customize your plan size</h1></div>
 
@@ -208,7 +208,7 @@ const Plan = () => {
           fontSize: "15px",
           border:'0px',
           borderRadius:'5px',
-          marginTop:'60px',
+          marginTop:'30px',
           marginLeft:'42%'
         }}
         onClick={handlePlan}
