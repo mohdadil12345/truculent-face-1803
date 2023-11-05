@@ -138,7 +138,7 @@
         "instructions": [
             {
                 "info": "• Bring a large pot of salted water to a boil. Wash and dry produce. • Finely chop sun-dried tomatoes. Peel and mince or grate garlic. Halve grape tomatoes lengthwise; place in a small bowl and toss with a drizzle of olive oil, salt, and pepper. Pick parsley leaves from stems; finely chop leaves.",
-                "img": "/assets/Pecan1.avif"
+                "img": "https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/63e2702fd5a52cca610e5470/step-d7cb077d.jpg"
             },
             {
                 "info": "• Place 1 TBSP butter (2 TBSP for 4 servings) in a medium microwave-safe bowl; microwave until melted, 30-45 seconds. • Stir in panko, Monterey Jack, remaining Frank’s RedHot® Original Seasoning Blend, and a big pinch of salt and pepper.",
@@ -187,20 +187,32 @@
         "difficulty": "easy",
         "ingredients": [
             {
-                "name": "Sun-Dried Tomatoes",
-                "vol": "1.5 ounce"
+                "info": "1• Adjust rack to top position and preheat\noven to 450 degrees. Bring a large pot\nof salted water to a boil. Wash and\ndry produce.\n• Halve zucchini lengthwise; slice into\n½-inch-thick half-moons. Dice tomato\ninto ½-inch pieces. Peel and mince or\ngrate garlic.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6419b3f5246bc509830727f3/step-d33e4626.jpg"
             },
             {
-                "name": "1 clove",
-                "vol": "Garlic"
+                "info": "2• Pat pork* dry with paper towels; season\nall over with half the Tuscan Heat Spice\n(all for 4 servings), salt, and pepper.\n• Heat a drizzle of oil in a large pan over\nmedium heat. Add pork and cook, turning\noccasionally, until browned all over,\n4-8 minutes. Turn off heat; transfer pork to\none side of a baking sheet. Wipe out pan.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6419b3f5246bc509830727f3/step-ab9a2ed9.jpg"
             },
             {
-                "name": "Sliced Almonds",
-                "vol": "½ ounce"
+                "info": "3• Toss zucchini with a drizzle of oil, salt,\nand pepper on opposite side of baking\nsheet with pork.\n• Roast on top rack until pork is cooked\nthrough and zucchini is lightly browned\nand tender, 12-15 minutes.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6419b3f5246bc509830727f3/step-32f87c62.jpg"
             },
             {
-                "name": "Veggie Stock Concentrate",
-                "vol": "1 unit"
+                "info": "4• Once water is boiling, add spaghetti to\npot. Cook, stirring occasionally, until al\ndente, 9-11 minutes. Reserve 1 cup pasta\ncooking water (1½ cups for 4 servings),\nthen drain.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6419b3f5246bc509830727f3/step-4a09fa90.jpg"
+            },
+            {
+                "info": "5• When pasta has 5 minutes left, heat a\ndrizzle of oil in pan used for pork over\nmedium heat. Add tomato and garlic;\ncook, stirring, until softened and fragrant,\n1-2 minutes.\n• Whisk in ¼ cup reserved pasta cooking\nwater (1⁄3 cup for 4 servings), cream\ncheese, and stock concentrate. Cook,\nstirring, until thickened, 1-2 minutes.\nSeason with salt and pepper. Remove\nfrom heat.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6419b3f5246bc509830727f3/step-3e3d7c98.jpg"
+            },
+            {
+                "info": "6• Add drained spaghetti, zucchini, half\nthe Parmesan, a splash of reserved\npasta cooking water, and a drizzle\nof olive oil to pan with sauce; toss to\ncombine. TIP: If needed, stir in more\npasta cooking water a splash at a time\nuntil pasta is thoroughly coated in sauce.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6419b3f5246bc509830727f3/step-c3de5cc3.jpg"
+            },
+            {
+                "info": "7• Slice pork crosswise.\n• Divide spaghetti between plates; top\nwith pork and sprinkle with remaining\nParmesan. Serve. \nPork is fully cooked when\ninternal temperature\nreaches 145°.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6419b3f5246bc509830727f3/step-3f7a3351.jpg"
             }
         ],
         "nutrition": [
@@ -312,28 +324,28 @@
         ],
         "instructions": [
             {
-                "info": "• Bring a large pot of salted water to a boil. Wash and dry produce. • Finely chop sun-dried tomatoes. Peel and mince or grate garlic. Halve grape tomatoes lengthwise; place in a small bowl and toss with a drizzle of olive oil, salt, and pepper. Pick parsley leaves from stems; finely chop leaves.",
-                "img": "/assets/Pecan1.avif"
+                "info": "1• Wash and dry produce.\n• Core, deseed, and dice bell pepper\ninto ½-inch pieces. Peel sweet potato\nif desired, then dice into ½-inch pieces.\nPeel and grate or mince garlic and\nginger. Halve, peel, and finely dice half\nthe onion (whole onion for 4 servings).\nZest and quarter lime.\n• In a small bowl, combine cornstarch\nwith 1 TBSP water (2 TBSP for 4).\nSet aside.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/64074f60d23cab1ea9063908/step-de8dee4f.jpg"
             },
             {
-                "info": "• Place 1 TBSP butter (2 TBSP for 4 servings) in a medium microwave-safe bowl; microwave until melted, 30-45 seconds. • Stir in panko, Monterey Jack, remaining Frank’s RedHot® Original Seasoning Blend, and a big pinch of salt and pepper.",
-                "img": "/assets/Pecan2.avif"
+                "info": "2• Heat a drizzle of oil in a large pot over\nmedium-high heat. Add bell pepper\nand sweet potato; season with ¼ tsp\nsalt (½ tsp for 4 servings) and pepper.\nCook, stirring occasionally, until lightly\nbrowned, 4-6 minutes.\n• Transfer to a plate.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/64074f60d23cab1ea9063908/step-143e2417.jpg"
             },
             {
-                "info": "• In a small bowl, combine honey, GREY POUPON® Dijon Mustard, and mayonnaise.",
-                "img": "/assets/Pecan2.avif"
+                "info": "3• Heat a drizzle of oil in same pot over\nmedium-high heat. Add garlic, ginger,\nand onion. Cook, stirring, until fragrant,\n1-2 minutes.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/64074f60d23cab1ea9063908/step-37d6875f.jpg"
             },
             {
-                "info": "• Pat chicken* dry with paper towels; season with remaining Fry Seasoning, salt, and pepper. Place on a lightly oiled baking sheet. • Evenly spread tops of chicken with a thin layer of honey mustard sauce (save the rest for serving). Mound with pecan mixture, pressing firmly to adhere (no need to coat the undersides). • Roast on middle rack until crust is golden brown and chicken is cooked through, 15-20 minutes.",
-                "img": "/assets/Pecan2.avif"
+                "info": "4• Add turkey* to pot with aromatics.\nCook, breaking up meat into\npieces, until browned and cooked\nthrough, 4-6 minutes. Season with\ncurry powder, ¼ tsp salt (½ tsp for\n4 servings), and pepper.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/64074f60d23cab1ea9063908/step-3bb4e3ee.jpg"
             },
             {
-                "info": "• Meanwhile, halve, core, and thinly slice apple. • In a large bowl, toss mixed greens and apple with Caesar dressing. Season with salt and pepper.",
-                "img": "/assets/Pecan2.avif"
+                "info": "5• Thoroughly shake coconut milk in\ncontainer before opening.\n• Transfer veggies to pot with turkey\nmixture. (TIP: If cornstarch in mixture\nhas settled, give it another stir now.)\nStir in stock concentrates, cornstarch\nmixture, coconut milk, chili sauce,\n1½ cups water (3 cups for 4 servings),\nand 1 TBSP sugar (2 TBSP for 4).\nBring to a boil, then reduce to a low\nsimmer. Cook until flavors meld and\nsweet potato is tender, 4-5 minutes.\nTIP: If soup seems too thick, add more\nwater a splash at a time as needed.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/64074f60d23cab1ea9063908/step-f6adb150.jpg"
             },
             {
-                "info": "• Divide chicken and salad between plates. Drizzle chicken with remaining honey mustard sauce.",
-                "img": "/assets/Pecan2.avif"
+                "info": "6• Stir juice from two lime wedges\n(four wedges for 4 servings) into soup.\nSeason with salt and pepper to taste.\n• Divide between bowls. Garnish with\nlime zest to taste. Serve with any\nremaining lime wedges on the side.\nGround Turkey is fully cooked when internal temperature\nreaches 165°.",
+                "img": "https://img.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/64074f60d23cab1ea9063908/step-3f0edecd.jpg"
             }
         ],
         "utensils": [
