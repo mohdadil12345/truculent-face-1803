@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate()
 
   const newObj = {
     email,
@@ -25,6 +28,7 @@ function Login() {
         console.log(res.data);
         localStorage.setItem("token", res.data.token);
         alert("Login sucessful!");
+        navigate('/')
       })
       .catch((err) => {
         console.log(err);
