@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Bottom1 } from "./Bottom1";
+import { Bottom2 } from "./Bottom2";
+import { Footer } from "./Footer";
 
 function Home() {
   return (
@@ -34,6 +36,8 @@ function Home() {
         </div>
       </SECTION>
       <Bottom1 />
+      <Bottom2 />
+      <Footer />
     </MAINSECTION>
   );
 }
