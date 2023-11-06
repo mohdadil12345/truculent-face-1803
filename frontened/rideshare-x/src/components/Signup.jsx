@@ -1,11 +1,14 @@
 import axios from "axios";
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useNavigate } from 'react-router-dom';
 
 function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+
+  const navigate = useNavigate()
 
   const handleContinue = () => {
     // e.preventDefault();
@@ -28,6 +31,7 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         alert("You are now registered");
+        navigate('/login')
       })
       .catch((err) => {
         console.log(err);
