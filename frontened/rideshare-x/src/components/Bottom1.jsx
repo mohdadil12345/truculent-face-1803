@@ -69,6 +69,7 @@ export const Bottom1 = () => {
 const SECTION = styled.div`
   min-height: 64vh;
   margin-top: 3rem;
+
   background-color: #f8f8f8;
   padding-bottom: #f8f8f8;
 
