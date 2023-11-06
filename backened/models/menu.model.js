@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const ingredientSchema = mongoose.Schema({
     name: String,
+    img: String,
     vol: String,
 });
 

@@ -34,6 +34,7 @@ function Signup() {
       });
   };
   return (
+
     <SECTION>
       <div className="form">
         <div className="signUp-form">
@@ -117,10 +118,12 @@ function Signup() {
         </div>
       </div>
     </SECTION>
+
   );
 }
 
 export default Signup;
+
 const SECTION = styled.div`
   .form {
     display: flex;
@@ -237,3 +240,4 @@ const SECTION = styled.div`
     color: rgb(3, 86, 36);
   }
 `;
+

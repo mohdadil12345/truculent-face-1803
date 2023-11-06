@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import meat from "../assets/svg-export/meatsvg.svg"
 import veggie from "../assets/svg-export/svgexport-7.svg"
 import family from "../assets/svg-export/svgexport-8.svg"
@@ -43,7 +44,8 @@ const Plan = () => {
     const [no_of_people, setNoOfPeople] = React.useState(2)
     const [mealsperweek, setMealPerWeek] = React.useState(2)
 
-
+    let plan_meal_ls = JSON.parse(localStorage.getItem("plan_meal")) || []
+    const navigate = useNavigate()
 
     const togglePreference = (preference) => {
         if (selected.includes(preference)) {
@@ -54,9 +56,19 @@ const Plan = () => {
 
     }
 
+    function handlePlan(){
 
+        const mealDet = {
+            aboutMeal: `${mealsperweek} meals for ${no_of_people} people per week`,
+            boxPrice: mealsperweek * no_of_people * 20 + mealsperweek * no_of_people * 2,
+            serving: `${mealsperweek * no_of_people} total servings`
+        }
 
-
+        plan_meal_ls.push({mealDet, selected})
+        localStorage.setItem("plan_meal", JSON.stringify(plan_meal_ls))
+        console.log(plan_meal_ls);
+        navigate('/address')
+    }
 
     return (
 
@@ -101,7 +113,7 @@ const Plan = () => {
                         </div>
 
                     </section>
-                    <div class="vl"></div>
+                    <div style={{marginTop:'80px', height:'450px'}} class="vl"></div>
                     <section className='right-content'>
                         <div className='heading-div'><h1 className='heading'>2. Customize your plan size</h1></div>
 
@@ -124,7 +136,7 @@ const Plan = () => {
                             </div>
                             <div className='meals-per-week custDiv'>
                                 <span>Meals per week</span>
-                                <div className='btns'>
+                                <div  className='btns'>
                                     <button className='meals-per-week'
                                         style={{
                                             backgroundColor: mealsperweek === 2 ? 'green' : '',
@@ -186,7 +198,23 @@ const Plan = () => {
 
             </div>
 
-
+            <button
+        style={{
+          width: "20%",
+          height: "45px",
+          backgroundColor: "#067a46",
+          color: "white",
+          fontWeight: "700",
+          fontSize: "15px",
+          border:'0px',
+          borderRadius:'5px',
+          marginTop:'30px',
+          marginLeft:'42%'
+        }}
+        onClick={handlePlan}
+      >
+       Select this plan
+      </button>
         </div>
 
 
