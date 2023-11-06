@@ -52,7 +52,6 @@ function Signup() {
   />
   <input type="Submit" value="Continue" onClick={handleContinue} />
 </div>
-
   );
 }
 
