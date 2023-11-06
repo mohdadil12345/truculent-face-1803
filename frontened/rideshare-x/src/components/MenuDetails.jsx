@@ -28,7 +28,16 @@ function MenuDetails() {
   };
 
   useEffect(() => {
-    fetchFood(id);
+    // fetchFood(id);
+
+    let token = localStorage.getItem("token");
+    if (token) {
+      fetchFood(id,token);
+    } else {
+      alert("please login first");
+    }
+
+
   }, []);
   const [color, setColor] = useState(null);
 

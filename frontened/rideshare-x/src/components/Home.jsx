@@ -35,9 +35,9 @@ function Home() {
           </div>
         </div>
       </SECTION>
-      <Bottom1 />
+      {/* <Bottom1 /> */}
       <Bottom2 />
-      <Footer />
+     
     </MAINSECTION>
   );
 }

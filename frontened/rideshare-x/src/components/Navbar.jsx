@@ -2,6 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+
+  const logoutuser = () => {
+    alert("logoutsuccess")
+    localStorage.removeItem("token");
+      window.location.href = '/'
+  }
+  
+
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -15,7 +24,7 @@ function Navbar() {
         <Link to="/register">Signup</Link>
       </div>
 
-      <button className="nav-log-btn">Logout</button>
+      <button onClick={logoutuser} className="nav-log-btn">Logout</button>
     </div>
   );
 }
