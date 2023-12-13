@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdMenu } from "react-icons/md";
-import { MdMenuOpen } from "react-icons/md";
+// import { MdMenuOpen } from "react-icons/md";
 function Navbar() {
 
   const [displ, setdisp] = useState(true)
@@ -25,8 +25,8 @@ function Navbar() {
       </div>
       
       <div className="menubtn">
-      <button className="menu-btn"  onClick={toggle}>{displ_btn? <MdMenu />
- : <MdMenuOpen />}</button>
+      <button className="menu-btn"  onClick={toggle}>{displ_btn? "🎫"
+ : "❌"}</button>
       </div>
       <div className="nav-menu" id= {displ ? "close" : "open"}>
         <Link to="/">Home</Link>
