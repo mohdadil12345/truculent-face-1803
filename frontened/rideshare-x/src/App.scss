@@ -15,9 +15,6 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
   position: relative;
 
-  //   filter: drop-shadow(0px 2px 2px rgb(241, 241, 241));
-  //   box-shadow: 0px 0px 10px rgb(49, 49, 49);
-  //   border-bottom: 1px solid rgb(218 245 233);
   .logo {
     min-width: 200px;
     img {
@@ -380,10 +377,8 @@
     .Ingredients-details {
       display: grid;
       grid-template-columns: repeat(2, 400px);
-      // background: red;
       width: max-content;
       .Ingredients-item {
-        // border: 1px solid black;
         display: flex;
         padding: 20px;
         align-items: center;
@@ -417,7 +412,6 @@
     background: white;
     max-width: 1200px;
     margin: 20px auto;
-    /* transform: translateY(-69px); */
     filter: drop-shadow(0px 0px 2px rgb(217, 217, 217));
     border-radius: 8px;
     padding: 30px;
@@ -433,15 +427,7 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .section-1 a {
-    //  text-decoration: none;
-  }
-  .section-1 span {
-    // background-color: red;
-  }
-  .footer-bottom a {
-    //  text-decoration: none;
-  }
+
   #menu-page .menu-items {
     display: flex;
     flex-direction: column;
@@ -521,8 +507,6 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  /* align-items: center; */
-  /* min-height: calc(100vh - 60px); */
   margin-top: 50px;
   filter: saturate(0);
   filter: drop-shadow(2px 4px 6px black);
@@ -554,10 +538,6 @@
 .log-bg {
   backdrop-filter: blur(25px);
   background: rgba(255, 255, 255, 0.2);
-  /* background: rgba(5, 140, 144,0.5); */
-  /* background: rgb(144 ,5 ,5, 0.5); */
-  /* background: linear-gradient(45deg, #f5a076, #ed7c44); */
-
   height: 100%;
   display: flex;
   flex-direction: column;
