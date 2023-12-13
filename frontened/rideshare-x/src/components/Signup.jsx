@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleContinue = () => {
     // e.preventDefault();
@@ -31,14 +31,13 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         alert("You are now registered");
-        navigate('/login')
+        navigate("/login");
       })
       .catch((err) => {
         console.log(err);
       });
   };
   return (
-
     <SECTION>
       <div className="form">
         <div className="signUp-form">
@@ -122,7 +121,6 @@ function Signup() {
         </div>
       </div>
     </SECTION>
-
   );
 }
 
@@ -160,6 +158,7 @@ const SECTION = styled.div`
     box-sizing: border-box;
     outline: none;
     border-style: 1px solid;
+    border: 0.2px solid gray;
   }
   .btn {
     text-align: center;
@@ -244,4 +243,3 @@ const SECTION = styled.div`
     color: rgb(3, 86, 36);
   }
 `;
-
