@@ -6,9 +6,10 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <AllRoutes/>
       <Footer />
+      
     </div>
   );
 }
