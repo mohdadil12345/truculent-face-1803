@@ -24,8 +24,11 @@ function Navbar() {
       </div>
       
       <div className="menubtn">
-      <button className="menu-btn"  onClick={toggle}>{displ_btn?  '🎫'
- : '❌'}</button>
+
+      <button className="menu-btn"  onClick={toggle}>{displ_btn? "🎫": "❌"}</button>
+
+  
+
       </div>
       <div className="nav-menu" id= {displ ? "close" : "open"}>
         <Link to="/">Home</Link>
