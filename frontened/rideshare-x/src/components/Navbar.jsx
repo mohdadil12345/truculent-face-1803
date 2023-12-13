@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { MdMenu } from "react-icons/md";
-// import { MdMenuOpen } from "react-icons/md";
+
 function Navbar() {
 
   const [displ, setdisp] = useState(true)
