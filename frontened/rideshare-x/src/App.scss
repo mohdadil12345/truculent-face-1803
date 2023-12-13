@@ -421,18 +421,9 @@
     color: rgb(47, 47, 47);
   }
 
-  //   background: white;
-  //   max-width: 1200px;
-  //   margin: 20px auto;
-  //   /* transform: translateY(-69px); */
-  //   filter: drop-shadow(0px 0px 2px rgb(217, 217, 217));
-  //   border-radius: 8px;
-  //   padding: 30px;
-  //   color: rgb(47, 47, 47);
-  // }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 920px) {
   #menu-page .menu-items {
     display: flex;
     flex-direction: column;
@@ -550,12 +541,27 @@
 @media only screen and (max-width: 600px) {
   .navbar {
     .nav-menu {
-      display: flex;
-      align-items: center;
-      margin-right: auto;
+      background-color: rgb(117, 181, 186);
+    position: fixed;
+    flex-direction: column;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    height: 100vh;
+    }
+    .menu-btn{
+      display: block;
       position: absolute;
-      top: 80px;
-      z-index: 555;
+      right: 5px;
+      font-size: 30px;
+      top: 10px;
+    }
+    #close {
+      right: -100%;
+    }
+    #open {
+      right: 0px;
     }
   }
   #menu-details #intructions .intructions-item {

@@ -340,4 +340,9 @@ const SECTION = styled.div`
 
     gap: 2rem;
   }
+
+.main-div{
+  display: none;
+}
+
 `;
