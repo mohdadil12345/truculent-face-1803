@@ -12,7 +12,7 @@ export const Footer = () => {
               <div className="heading">
                 <span className="h">HelloFresh</span>
               </div>
-              <div>
+              <div id="stud">
                 <a href="#/">
                   <span className="v">Students</span>
                 </a>
