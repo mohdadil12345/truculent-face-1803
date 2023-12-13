@@ -56,7 +56,7 @@ const Plan = () => {
 
     }
 
-    function handlePlan(){
+    function handlePlan() {
 
         const mealDet = {
             aboutMeal: `${mealsperweek} meals for ${no_of_people} people per week`,
@@ -64,7 +64,7 @@ const Plan = () => {
             serving: `${mealsperweek * no_of_people} total servings`
         }
 
-        plan_meal_ls.push({mealDet, selected})
+        plan_meal_ls.push({ mealDet, selected })
         localStorage.setItem("plan_meal", JSON.stringify(plan_meal_ls))
         console.log(plan_meal_ls);
         navigate('/address')
@@ -72,7 +72,7 @@ const Plan = () => {
 
     return (
 
-        <div className="main-container">
+        <div className="main-container" style={{border:"1px solid red"}}>
 
             <div className='item-container'>
                 <div className='heading'><h1>Personalize your plan</h1></div>
@@ -113,7 +113,7 @@ const Plan = () => {
                         </div>
 
                     </section>
-                    <div style={{marginTop:'80px', height:'450px'}} class="vl"></div>
+
                     <section className='right-content'>
                         <div className='heading-div'><h1 className='heading'>2. Customize your plan size</h1></div>
 
@@ -134,9 +134,11 @@ const Plan = () => {
                                         className={no_of_people === 4 ? 'selected' : 'not-selected'} onClick={() => { setNoOfPeople(4) }}>4</button>
                                 </div>
                             </div>
+
+                            
                             <div className='meals-per-week custDiv'>
                                 <span>Meals per week</span>
-                                <div  className='btns'>
+                                <div className='btns'>
                                     <button className='meals-per-week'
                                         style={{
                                             backgroundColor: mealsperweek === 2 ? 'green' : '',
@@ -199,22 +201,22 @@ const Plan = () => {
             </div>
 
             <button
-        style={{
-          width: "20%",
-          height: "45px",
-          backgroundColor: "#067a46",
-          color: "white",
-          fontWeight: "700",
-          fontSize: "15px",
-          border:'0px',
-          borderRadius:'5px',
-          marginTop:'30px',
-          marginLeft:'42%'
-        }}
-        onClick={handlePlan}
-      >
-       Select this plan
-      </button>
+                style={{
+                    width: "20%",
+                    height: "45px",
+                    backgroundColor: "#067a46",
+                    color: "white",
+                    fontWeight: "700",
+                    fontSize: "15px",
+                    border: '0px',
+                    borderRadius: '5px',
+                    marginTop: '30px',
+                    marginLeft: '42%'
+                }}
+                onClick={handlePlan}
+            >
+                Select this plan
+            </button>
         </div>
 
 
