@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { MdMenu } from "react-icons/md";
+import { MdMenuOpen } from "react-icons/md";
 function Navbar() {
 
   const [displ, setdisp] = useState(true)
@@ -23,7 +24,10 @@ function Navbar() {
         <img src="/assets/Hello_Fresh_Lockup.png" alt="" />
       </div>
       
-      <button className="menu-btn"  onClick={toggle}>{displ_btn? "🎫" : "❌"}</button>
+      <div className="menubtn">
+      <button className="menu-btn"  onClick={toggle}>{displ_btn? <MdMenu />
+ : <MdMenuOpen />}</button>
+      </div>
       <div className="nav-menu" id= {displ ? "close" : "open"}>
         <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
@@ -32,7 +36,9 @@ function Navbar() {
         <Link to="/register">Signup</Link>
       </div>
 
+      <div className="logbtn">
       <button onClick={logoutuser} className="nav-log-btn">Logout</button>
+      </div>
     </div>
   );
 }
