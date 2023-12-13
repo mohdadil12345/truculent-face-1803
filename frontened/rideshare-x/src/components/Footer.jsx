@@ -17,7 +17,7 @@ export const Footer = () => {
                   <span className="v">Students</span>
                 </a>
               </div>
-              <div>
+              <div className="blog">
                 <a href="#/">
                   <span className="v">Blog</span>
                 </a>
@@ -337,7 +337,12 @@ const SECTION = styled.div`
   .footer-bottom-icon {
     display: flex;
     cursor: pointer;
-
     gap: 2rem;
   }
+
+.main-div{
+  /* display: none; */
+}
+
+
 `;
