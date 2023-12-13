@@ -344,5 +344,8 @@ const SECTION = styled.div`
   /* display: none; */
 }
 
+.checklist {
+  font-size:10px
+}
 
 `;

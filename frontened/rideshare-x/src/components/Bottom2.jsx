@@ -59,7 +59,7 @@ export const Bottom2 = () => {
 };
 
 const SECTION = styled.div`
-  max-height: 80vh;
+  /* max-height: 80vh; */
   background-color: rgb(255, 255, 255);
 
   .main-div {
