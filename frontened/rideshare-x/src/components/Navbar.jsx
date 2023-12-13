@@ -33,7 +33,6 @@ function Navbar() {
       </div>
 
       <button onClick={logoutuser} className="nav-log-btn">Logout</button>
-      {/* <button onClick={toggle}>❌🎫</button> */}
     </div>
   );
 }
