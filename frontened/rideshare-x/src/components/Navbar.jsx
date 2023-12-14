@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { MdMenu } from "react-icons/md";
-import { FaXmark } from "react-icons/fa6";
 
 function Navbar() {
 
@@ -27,7 +25,7 @@ function Navbar() {
       
       <div className="menubtn">
 
-      <button className="menu-btn"  onClick={toggle}>{displ_btn? <MdMenu/> : <FaXmark/>}</button>
+      <button className="menu-btn"  onClick={toggle}>{displ_btn? <i class="fa-solid fa-bars"></i> : <i class="fa-solid fa-xmark"></i>}</button>
 
   
 
