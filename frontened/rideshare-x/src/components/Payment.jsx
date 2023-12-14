@@ -5,17 +5,39 @@ import { useNavigate } from 'react-router-dom';
 
 const PaymentContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 20px;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+
+  @media only screen and (max-width: 920px) {
+    
+    display: flex;
+    flex-direction: column;
+}
 `;
 
 const PaymentForm = styled.form`
-  width: 300px;
+  width: 50%;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  @media only screen and (max-width: 920px) {
+    
+      width: 80%;
+      margin-top: 30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+      width: 100%;
+      margin-top: 30px;
+      font-size: 15px;
+}
 `;
 
 const InputField = styled.input`
@@ -37,6 +59,44 @@ const PaymentButton = styled.button`
   height: 40px;
 `;
 
+const Details = styled.div`
+  border: 1px solid #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 30px;
+  border-radius: 10px;
+
+  @media only screen and (max-width: 920px) {
+    
+    width: 80%;
+    margin-top: 30px;
+
+    .price-det{
+      padding-left: 230px;
+    }
+
+    .price-det-a{
+      padding-left: 245px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+  width: 100%;
+  margin-top: 30px;
+
+    .price-det{
+      padding-left: 30px;
+    }
+
+    .price-det-a{
+      padding-left: 45px;
+    }
+
+}
+`;
+
+// padding:'30px', borderRadius:'10px'
+
 const Payment = () => {
     const [cardNumber, setCardNumber] = useState('');
     const [expiryDate, setExpiryDate] = useState('');
@@ -56,8 +116,8 @@ const Payment = () => {
     };
   
     return (
-      <PaymentContainer style={{display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
-        <PaymentForm onSubmit={handleSubmit} style={{width:'50%'}}>
+      <PaymentContainer >
+        <PaymentForm id='payment-form' onSubmit={handleSubmit}>
             <div style={{display:'flex', alignItems:'center'}}>
             <h3 style={{marginRight:'10px'}}>Cards that we accept</h3>
             <img style={{width:'50px'}} src="https://cdn.hellofresh.com/payments/icons/mc.svg"/>
@@ -88,7 +148,7 @@ const Payment = () => {
           <PaymentButton type="submit">Pay Now</PaymentButton>
         </PaymentForm>
 
-        <div style={{boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px', padding:'30px', borderRadius:'10px'}}>
+        <Details>
         <div id="oder-container">
           <h2>Order Summary</h2>
 
@@ -110,7 +170,7 @@ const Payment = () => {
             </div>
 
             <div>
-              <p>
+              <p className='price-det-a'>
                 <b>${meal_ls[meal_ls.length-1].mealPrice}</b>
               </p>
             </div>
@@ -127,7 +187,7 @@ const Payment = () => {
             </div>
 
             <div>
-              <p>
+              <p className='price-det'>
                 <b>${meal_ls[meal_ls.length-1].deliveryCharge}</b>
               </p>
             </div>
@@ -143,7 +203,7 @@ const Payment = () => {
             </div>
 
             <div>
-              <p style={{ fontSize: "20px" }}>
+              <p className='price-det' style={{ fontSize: "20px" }}>
                 <b>${meal_ls[meal_ls.length-1].mealPrice + meal_ls[meal_ls.length-1].deliveryCharge}</b>
               </p>
             </div>
@@ -176,7 +236,7 @@ const Payment = () => {
                 <p>Provide your instruction (if any)</p>
               </div>
               <div>
-                <p>edit</p>
+                <p className='price-det'>edit</p>
               </div>
             </div>
 
@@ -191,7 +251,7 @@ const Payment = () => {
             </div>
           </div>
         </div>
-        </div>
+        </Details>
        
       </PaymentContainer>
     );
