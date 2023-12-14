@@ -7,6 +7,7 @@
 .main-container {
     width: 90%;
     margin: auto;
+    margin-top: 3.2rem;
 
     /* height: 100vh; */
     padding: 20px;
@@ -188,32 +189,56 @@
 
 /* Media Query for small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
     .item-container {
         max-width: 100%;
     }
 
     .left-right-content {
         flex-direction: column;
+        padding: 5px;
         /* width: fit-content; */
         /* width: 100%; */
     }
 
     .right-content {
         width: 100%;
+        text-align: left;
+    }
+
+
+
+    .people-btns>button {
+        width: 50%;
     }
 
     .customize-people {
-        flex-direction: column;
+        /* flex-direction: column; */
+        display: inline;
         width: 100%;
-        border: 1px solid red;
-
 
     }
 
-    .customize-container>.people-btn {}
+    .custDiv {
+        display: block;
+        width: 100%;
 
-    .customize-people>.people-btn>button {
+    }
+
+    .btns>button {
+        width: 20%;
+
+    }
+
+    /* 
+    .custDiv>span {
+        border: 1px solid red;
+    } */
+
+    /* .customize-container>.people-btn {} */
+
+    .customize-people>.people-btn {
+
         width: 100%;
         margin-left: 10px;
 
@@ -225,11 +250,56 @@
 
 
 /* Media Query for medium devices (landscape tablets, 768px and up)   */
-/* 
-@media only screen and (min-width: 500px) and (max-width: 1024px) {
+
+@media only screen and (min-width: 400px) and (max-width: 1024px) {
+    .item-container {
+        max-width: 100%;
+    }
+
     .left-right-content {
         flex-direction: column;
-        width: fit-content;
-        width: 100%;
+        padding: 5px;
+        /* width: fit-content; */
+        /* width: 100%; */
     }
-} */
+
+    .right-content {
+        width: 100%;
+        text-align: left;
+    }
+
+
+
+    .people-btns>button {
+        width: 50%;
+    }
+
+    .customize-people {
+        /* flex-direction: column; */
+        display: inline;
+        width: 100%;
+
+    }
+
+    .custDiv {
+        display: block;
+        width: 100%;
+
+    }
+
+    .btns>button {
+        width: 20%;
+
+    }
+
+
+
+    /* .customize-container>.people-btn {} */
+
+    .customize-people>.people-btn {
+
+        width: 100%;
+        margin-left: 10px;
+
+    }
+}

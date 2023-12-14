@@ -72,7 +72,7 @@ const Plan = () => {
 
     return (
 
-        <div className="main-container" style={{border:"1px solid red"}}>
+        <div className="main-container">
 
             <div className='item-container'>
                 <div className='heading'><h1>Personalize your plan</h1></div>
@@ -135,7 +135,7 @@ const Plan = () => {
                                 </div>
                             </div>
 
-                            
+
                             <div className='meals-per-week custDiv'>
                                 <span>Meals per week</span>
                                 <div className='btns'>
