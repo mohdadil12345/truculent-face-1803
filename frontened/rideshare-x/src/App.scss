@@ -561,7 +561,7 @@
       background-color: rgb(223, 223, 223);
       position: fixed;
       flex-direction: column;
-      top: 0;
+      top: 0px;
       right: 0;
       width: 200px;
       padding: 10px;
@@ -569,6 +569,7 @@
       background: white;
       border-left: 1px solid #cdcdcd;
       z-index: 9999;
+      transition: right 1s;
     }
 
     .menubtn {
