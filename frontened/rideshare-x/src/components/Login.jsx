@@ -247,4 +247,248 @@ const SECTION = styled.div`
   a {
     color: rgb(3, 86, 36);
   }
+
+  /*Large screen */
+  @media screen and (max-width: 1024px) {
+    .form {
+      display: flex;
+      margin-left: 60px;
+      gap: 90px;
+    }
+    .signUp-form {
+      text-align: center; /* Center-align elements within .form */
+      min-width: 400px;
+      height: auto;
+      padding: 25px;
+      border: 2px solid red;
+      background-color: rgb(255, 255, 255);
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(228, 228, 228);
+      margin-top: 64px;
+      margin-bottom: 48px;
+    }
+    input {
+      width: 100%; /* Make the inputs take the full width of the container */
+      padding: 10px; /* Add some padding for spacing */
+      margin: 5px 0;
+      font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 16px;
+      border-radius: 4px;
+      text-align: left;
+      border-color: rgb(228, 228, 228);
+      background-color: rgb(255, 255, 255);
+      border: 0.2px solid gray;
+      box-sizing: border-box;
+      outline: none;
+      border-style: 1px solid;
+    }
+    .btn {
+      text-align: center;
+      border-color: rgb(6, 122, 70);
+      border-style: none;
+      line-height: 24px;
+      background-color: rgb(6, 122, 70);
+      color: rgb(255, 255, 255);
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      cursor: pointer;
+    }
+    a {
+      color: rgb(6, 122, 70);
+    }
+    .discription {
+      background-image: url("/assets/login-background.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      width: 430px;
+      background-size: 319px 366px;
+    }
+    .div-1 {
+      margin: 12px;
+      height: 233px;
+      width: 161px;
+      display: flex;
+      position: relative;
+      top: -55px;
+    }
+
+    img {
+      /* position: absolute; */
+      height: 83%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      color: transparent;
+    }
+    .main {
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px 0px;
+      max-width: 420px;
+      height: 155px;
+      z-index: 2;
+      position: relative;
+      margin-top: 130px;
+      transform: translateX(-5rem);
+    }
+    .div-dis {
+      display: flex;
+
+      padding: 32px 32px 32px 40px;
+
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 32px 32px 32px 40px;
+    }
+    .main-span {
+      color: rgb(36, 36, 36);
+      font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+      margin: 8px 0px 0px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .footer-icon {
+      display: flex;
+      margin-top: 8px;
+      gap: 1rem;
+    }
+    .icon-box1 {
+      width: 20%;
+    }
+    a {
+      color: rgb(3, 86, 36);
+    }
+  }
+
+  /**Medium screen  */
+
+  @media screen and (max-width: 790px) {
+    .form {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: repeat(1fr);
+    }
+    .signUp-form {
+      text-align: center; /* Center-align elements within .form */
+      width: 600px;
+      height: auto;
+      padding: 25px;
+
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(228, 228, 228);
+      margin-top: 64px;
+      margin-bottom: 48px;
+    }
+    input {
+      width: 100%; /* Make the inputs take the full width of the container */
+      padding: 10px; /* Add some padding for spacing */
+      margin: 5px 0;
+      font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 16px;
+      border-radius: 4px;
+      text-align: left;
+      border-color: rgb(228, 228, 228);
+      background-color: rgb(255, 255, 255);
+      border: 0.2px solid gray;
+      box-sizing: border-box;
+      outline: none;
+      border-style: 1px solid;
+    }
+    .btn {
+      text-align: center;
+      border-color: rgb(6, 122, 70);
+      border-style: none;
+      line-height: 24px;
+      background-color: rgb(6, 122, 70);
+      color: rgb(255, 255, 255);
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      cursor: pointer;
+    }
+    a {
+      color: rgb(6, 122, 70);
+    }
+    .discription {
+      background-image: url("/assets/login-background.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      width: 630px;
+      height: auto;
+      background-size: 319px 366px;
+    }
+    .div-1 {
+      margin: 12px;
+      height: 233px;
+      width: 161px;
+      display: flex;
+      position: relative;
+      top: -55px;
+    }
+
+    img {
+      /* position: absolute; */
+      height: 83%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      color: transparent;
+    }
+    .main {
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px 0px;
+      max-width: 420px;
+      height: 160px;
+      z-index: 2;
+      position: relative;
+      margin-top: 130px;
+      margin-left: 5rem;
+      transform: translateY(-3rem);
+    }
+    .div-dis {
+      display: flex;
+
+      padding: 32px 32px 32px 40px;
+
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 32px 32px 32px 40px;
+    }
+    .main-span {
+      color: rgb(36, 36, 36);
+      font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+      margin: 8px 0px 0px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .footer-icon {
+      display: flex;
+      margin-top: 8px;
+      gap: 1rem;
+    }
+    .icon-box1 {
+      width: 20%;
+    }
+    a {
+      color: rgb(3, 86, 36);
+    }
+  }
 `;
