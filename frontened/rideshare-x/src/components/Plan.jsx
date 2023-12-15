@@ -180,7 +180,7 @@ const Plan = () => {
                                     }) : <p>Choose your plan</p>
                                 }
 
-                                <div className='description'>
+                                <div className='cc'>
                                     <p>{mealsperweek} meals for {no_of_people} people per week</p>
                                     <p>{mealsperweek * no_of_people} total servings</p>
                                     <hr />
