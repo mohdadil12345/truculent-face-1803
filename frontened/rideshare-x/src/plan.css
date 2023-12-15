@@ -116,14 +116,17 @@
 
 .custDiv {
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: auto;
+
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
 
 .custDiv>span {
+    text-align: left;
+    width: 50%;
     color: rgb(36, 36, 36);
     font-weight: 400;
     font-size: 16px;
@@ -132,8 +135,16 @@
 
 }
 
+.people-btns,
+.btns {
+
+    width: 100%;
+    margin-left: 12px;
+}
+
 .people-btns>button {
-    width: 7.9rem;
+
+    width: 50%;
     padding: 5px;
     border-radius: 4px;
     height: 35px;
@@ -146,8 +157,10 @@
 
 }
 
+
 .btns>button {
-    width: 3.2rem;
+
+    width: 20%;
     padding: 5px;
     border-radius: 4px;
     height: 35px;
@@ -197,13 +210,12 @@
     .left-right-content {
         flex-direction: column;
         padding: 5px;
-        /* width: fit-content; */
-        /* width: 100%; */
     }
 
     .right-content {
         width: 100%;
         text-align: left;
+
     }
 
 
@@ -225,17 +237,13 @@
 
     }
 
+
     .btns>button {
         width: 20%;
 
     }
 
-    /* 
-    .custDiv>span {
-        border: 1px solid red;
-    } */
 
-    /* .customize-container>.people-btn {} */
 
     .customize-people>.people-btn {
 
@@ -259,8 +267,6 @@
     .left-right-content {
         flex-direction: column;
         padding: 5px;
-        /* width: fit-content; */
-        /* width: 100%; */
     }
 
     .right-content {
@@ -270,36 +276,28 @@
 
 
 
-    .people-btns>button {
-        width: 50%;
+    .people-btns {
+        /* width: 50%; */
+        width: 100%;
     }
 
+
     .customize-people {
-        /* flex-direction: column; */
+
         display: inline;
         width: 100%;
 
     }
 
     .custDiv {
+        text-align: center;
         display: block;
         width: 100%;
-
     }
 
-    .btns>button {
-        width: 20%;
-
-    }
+   
 
 
 
-    /* .customize-container>.people-btn {} */
 
-    .customize-people>.people-btn {
-
-        width: 100%;
-        margin-left: 10px;
-
-    }
 }
