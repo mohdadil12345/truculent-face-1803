@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../AuthContext/AuthContextProvider";
+import { Avatar, Button } from "@chakra-ui/react";
 
 function Navbar() {
 
   const [displ, setdisp] = useState(true)
   const [displ_btn, setdisp_btn] = useState(true)
+
+  const {isAuth, usename} = useContext(AuthContext)
+
+  console.log(usename);
 
   const toggle = () => {
     setdisp(!displ)
@@ -34,12 +40,11 @@ function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
         <Link to="/plan">Plan</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Signup</Link>
+        {isAuth ? null : <Link to="/register">Signup</Link>}
       </div>
 
       <div className="logbtn">
-      <button onClick={logoutuser} className="nav-log-btn">Logout</button>
+      {isAuth ? (<span style={{display:'flex', alignItems:'center', gap:'20px', fontWeight:'bold'}}><Avatar id="username" color='white' size='sm' name={usename} src='https://bit.ly/tioluwani-kolawole' /><h2 id="username">{usename}</h2><Button width={'100px'} colorScheme="green" size="md" variant="outline" onClick={logoutuser}>Logout</Button></span> ) :( <Button width={'100px'} colorScheme="red" size="md" variant="outline"><Link to="/login">Login</Link></Button>)}
       </div>
     </div>
   );

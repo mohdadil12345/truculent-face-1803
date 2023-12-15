@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { useToast } from "@chakra-ui/react";
+import { AuthContext } from "../AuthContext/AuthContextProvider";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,6 +11,8 @@ function Login() {
   const toast = useToast();
 
   const navigate = useNavigate();
+
+  const {isAuth, login} = useContext(AuthContext)
 
   const newObj = {
     email,
@@ -38,8 +41,8 @@ function Login() {
           duration: 1200,
           isClosable: true,
         });
-
-        // navigate("/");
+        login(res.data.token)
+        navigate("/");
       })
       .catch((err) => {
         console.log(err);

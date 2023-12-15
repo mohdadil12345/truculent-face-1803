@@ -1,7 +1,8 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../AuthContext/AuthContextProvider";
 
 function Signup() {
   const [email, setEmail] = useState("");
@@ -9,6 +10,8 @@ function Signup() {
   const [username, setUsername] = useState("");
 
   const navigate = useNavigate();
+
+  const {signup} = useContext(AuthContext)
 
   const handleContinue = () => {
     // e.preventDefault();
@@ -31,6 +34,7 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         alert("You are now registered");
+        signup(newUser.username)
         navigate("/login");
       })
       .catch((err) => {
