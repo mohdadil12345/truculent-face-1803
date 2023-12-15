@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export const Bottom2 = () => {
+
+  const navigate = useNavigate()
+
+  function handleClick(){
+    navigate('/plan')
+  }
+
   return (
     <SECTION>
       <div className="main">
@@ -42,7 +50,7 @@ export const Bottom2 = () => {
                   <div className="main-button-div">
                     <a href="#content" className="anchor">
                       <span>
-                        <button className="span-button">
+                        <button onClick={handleClick} className="span-button">
                           <span className="span">View our plans</span>
                         </button>
                       </span>

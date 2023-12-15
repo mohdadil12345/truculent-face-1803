@@ -3,8 +3,16 @@ import styled from "styled-components";
 import { Bottom1 } from "./Bottom1";
 import { Bottom2 } from "./Bottom2";
 import { Footer } from "./Footer";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Home() {
+
+  const navigate = useNavigate()
+
+  function handleClick(){
+    navigate('/plan')
+  }
+  
   return (
     <MAINSECTION>
       <SECTION className="no-reset">
@@ -25,7 +33,7 @@ function Home() {
             <div className="main-button-div">
               <a href="#content" className="anchor">
                 <span>
-                  <button className="span-button">
+                  <button onClick={handleClick} className="span-button">
                     <span className="span">View our plan</span>
                   </button>
                 </span>

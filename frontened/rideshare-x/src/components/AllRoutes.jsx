@@ -8,6 +8,7 @@ import MenuDetails from './MenuDetails'
 import Address from './Address'
 import Payment from './Payment'
 import Plan from './Plan'
+import PrivateRoute from '../AuthContext/PrivateRoute'
 
 function AllRoutes() {
   return (
@@ -19,7 +20,9 @@ function AllRoutes() {
         <Route path = "/menu" element =  {<Menu/>}/>
         <Route path = "/menu/:id" element =  {<MenuDetails/>}/>
         <Route path ='/address' element={<Address/>}/>
-        <Route path = '/plan' element={<Plan/>}/>
+        <Route path = '/plan' element={<PrivateRoute>
+          <Plan/>
+        </PrivateRoute>}/>
         <Route path='/payment' element={<Payment/>}/>
     </Routes>
    </div>
