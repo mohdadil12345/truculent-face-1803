@@ -202,7 +202,7 @@
 
 /* Media Query for small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .item-container {
         max-width: 100%;
     }
@@ -259,7 +259,7 @@
 
 /* Media Query for medium devices (landscape tablets, 768px and up)   */
 
-@media only screen and (min-width: 400px) and (max-width: 1024px) {
+@media only screen and  (max-width: 1024px) {
     .item-container {
         max-width: 100%;
     }
