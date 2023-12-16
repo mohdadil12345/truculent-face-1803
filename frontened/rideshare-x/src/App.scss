@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     margin-right: auto;
-    
+
     a {
       text-decoration: none;
       color: #1b1b1b;
@@ -428,7 +428,6 @@
 }
 
 @media only screen and (max-width: 920px) {
-
   #menu-page .menu-items {
     display: flex;
     flex-direction: column;
@@ -556,8 +555,16 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #menu-details #Ingredients {
+    .ing {
+      flex-direction: column;
+    }
 
-  #username{
+    .Ingredients-details {
+      grid-template-columns: 100%;
+    }
+  }
+  #username {
     display: none;
   }
   .navbar {
@@ -638,8 +645,7 @@
   .main-div {
     flex-direction: column;
   }
-  .checklist{
+  .checklist {
     font-size: 32px;
   }
-
 }
