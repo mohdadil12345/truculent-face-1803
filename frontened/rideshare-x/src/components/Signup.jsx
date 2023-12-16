@@ -486,4 +486,47 @@ const SECTION = styled.div`
       color: rgb(3, 86, 36);
     }
   }
+
+  @media screen and (min-width: 425px) and (max-width: 642px) {
+    .form {
+      gap: 20px; /* Adjust the gap between elements */
+      margin-left: 20px; /* Adjust the left margin */
+    }
+
+    .signUp-form {
+      max-width: 400px; /* Limit the maximum width */
+      width: 100%; /* Occupy full width */
+      padding: 15px; /* Adjust padding */
+      margin-top: 32px; /* Adjust margin top */
+      margin-bottom: 24px;
+    }
+
+    input {
+      font-size: 14px; /* Adjust font size */
+    }
+
+    .discription {
+      width: 100%; /* Occupy full width */
+      background-size: cover; /* Adjust background size */
+    }
+    h2 {
+      width: 200px;
+    }
+    .main {
+      margin-top: 100px; /* Adjust margin top */
+      transform: translateX(0); /* Reset transform */
+    }
+
+    .main-span {
+      font-size: 14px; /* Adjust font size */
+    }
+
+    .footer-icon {
+      gap: 0.5rem; /* Adjust the gap between icons */
+    }
+
+    .icon-box1 {
+      width: 25%; /* Adjust the width of icon boxes */
+    }
+  }
 `;
