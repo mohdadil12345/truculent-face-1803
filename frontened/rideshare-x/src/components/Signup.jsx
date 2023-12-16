@@ -11,7 +11,7 @@ function Signup() {
 
   const navigate = useNavigate();
 
-  const {signup} = useContext(AuthContext)
+  const { signup } = useContext(AuthContext);
 
   const handleContinue = () => {
     // e.preventDefault();
@@ -34,7 +34,7 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         alert("You are now registered");
-        signup(newUser.username)
+        signup(newUser.username);
         navigate("/login");
       })
       .catch((err) => {
@@ -523,6 +523,118 @@ const SECTION = styled.div`
 
     .main-span {
       font-size: 14px; /* Adjust font size */
+    }
+
+    .footer-icon {
+      gap: 0.5rem; /* Adjust the gap between icons */
+    }
+
+    .icon-box1 {
+      width: 25%; /* Adjust the width of icon boxes */
+    }
+  }
+
+  /* Screen size between 375px and 642px */
+  @media screen and (min-width: 375px) and (max-width: 642px) {
+    .form {
+      gap: 20px; /* Adjust the gap between elements */
+
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .signUp-form {
+      max-width: 375px;
+
+      margin-left: 0px;
+    }
+
+    input {
+      font-size: 14px; /* Adjust font size */
+      width: 94%;
+      /* margin-right: 7rem; */
+    }
+
+    .discription {
+      /* max-width: 350px !important; */
+      width: 375px; /* Occupy full width */
+      background-size: cover; /* Adjust background size */
+    }
+
+    h2 {
+      width: 200px;
+      display: none;
+    }
+    img {
+      /* display: none; */
+      height: 138px;
+    }
+    .main {
+      height: 100px;
+      margin-top: 120px; /* Adjust margin top */
+      transform: translateX(-0.1); /* Reset transform */
+      margin-right: 3rem;
+    }
+
+    .main-span {
+      font-size: 14px; /* Adjust font size */
+      display: none;
+    }
+
+    .footer-icon {
+      gap: 0.5rem; /* Adjust the gap between icons */
+    }
+
+    .icon-box1 {
+      width: 25%; /* Adjust the width of icon boxes */
+    }
+  }
+
+  /* Screen size between 375px and 642px */
+  @media screen and (min-width: 320px) and (max-width: 642px) {
+    .form {
+      /* gap: 20px;  */
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: repeat(1fr);
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .signUp-form {
+      width: 300px;
+    }
+
+    input {
+      font-size: 14px; /* Adjust font size */
+      width: 94%;
+      /* margin-right: 7rem; */
+    }
+
+    .discription {
+      /* max-width: 350px !important; */
+      width: 300px; /* Occupy full width */
+      background-size: cover; /* Adjust background size */
+    }
+
+    h2 {
+      width: 200px;
+      display: none;
+    }
+    img {
+      /* display: none; */
+      height: 138px;
+    }
+    .main {
+      height: 100px;
+      margin-top: 120px; /* Adjust margin top */
+      transform: translateX(-0.1); /* Reset transform */
+      margin-right: 3rem;
+    }
+
+    .main-span {
+      font-size: 14px; /* Adjust font size */
+      display: none;
     }
 
     .footer-icon {
