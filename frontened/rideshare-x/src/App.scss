@@ -427,6 +427,30 @@
   text-decoration: none;
 }
 
+
+.load_cont{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border-top: 8px solid rgb(128, 201, 215);
+  border-bottom: 8px solid rgb(116, 206, 224);
+  border-right: 8px solid rgb(13, 113, 133);
+  border-left: 8px solid rgb(13, 113, 133);
+
+  animation: spin 0.7s linear infinite;
+
+}
+
+@keyframes spin {
+ 
+
+   100%{
+    transform: rotate(360deg);
+   }
+}
+
+
+
 @media only screen and (max-width: 920px) {
   #menu-page .menu-items {
     display: flex;
