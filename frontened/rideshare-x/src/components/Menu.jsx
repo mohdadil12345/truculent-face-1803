@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import MenuCard from "./MenuCard";
+import Loading from "./Loading";
 
 const api = "https://ride-share-backend-pw1v.onrender.com"
 
 
 function Menu() {
   const [data, setdata] = useState([]);
+  const [loading, setloading] = useState(true)
   const fetchMenu = async () => {
+    setloading(true)
     let response = await fetch(`${api}/menu/food`, {
       method: "GET",
     });
@@ -14,8 +17,7 @@ function Menu() {
     let data = await response.json();
     console.log(data);
     setdata(data);
-
-    // setdata(aaa);
+    setloading(false)
   };
   useEffect(() => {
     fetchMenu();
@@ -36,6 +38,9 @@ function Menu() {
     const newShuffledArray = shuffleArray(data);
     setdata(newShuffledArray);
   };
+
+
+
 
   return (
     <div id="menu-page">
@@ -67,6 +72,7 @@ function Menu() {
         </div>
       </div>
       <div className="menu-items">
+        {loading && <Loading/>}
         {data.map((item) => (
           <MenuCard item={item} />
         ))}
