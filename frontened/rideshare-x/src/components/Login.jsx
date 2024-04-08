@@ -12,7 +12,7 @@ function Login() {
 
   const navigate = useNavigate();
 
-  const {isAuth, login} = useContext(AuthContext)
+  const { isAuth, login } = useContext(AuthContext);
 
   const newObj = {
     email,
@@ -41,7 +41,7 @@ function Login() {
           duration: 1200,
           isClosable: true,
         });
-        login(res.data.token)
+        login(res.data.token);
         navigate("/");
       })
       .catch((err) => {
@@ -498,4 +498,160 @@ const SECTION = styled.div`
       color: rgb(3, 86, 36);
     }
   }
+
+  @media screen and (min-width: 425px) and (max-width: 642px) {
+    .form {
+      gap: 20px; /* Adjust the gap between elements */
+      margin-left: 20px; /* Adjust the left margin */
+    }
+
+    .signUp-form {
+      max-width: 390px; /* Limit the maximum width */
+      width: 100%; /* Occupy full width */
+      padding: 15px; /* Adjust padding */
+      margin-top: 32px; /* Adjust margin top */
+      margin-bottom: 24px;
+    }
+
+    input {
+      font-size: 14px; /* Adjust font size */
+    }
+
+    .discription {
+      width: 100%; /* Occupy full width */
+      background-size: cover; /* Adjust background size */
+    }
+    h2 {
+      width: 200px;
+    }
+    .main {
+      margin-top: 100px; /* Adjust margin top */
+      transform: translateX(0); /* Reset transform */
+    }
+
+    .main-span {
+      font-size: 14px; /* Adjust font size */
+    }
+
+    .footer-icon {
+      gap: 0.5rem; /* Adjust the gap between icons */
+    }
+
+    .icon-box1 {
+      width: 25%; /* Adjust the width of icon boxes */
+    }
+  }
+
+  /* Screen size between 375px and 642px */
+  @media screen and (min-width: 375px) and (max-width: 642px) {
+    .form {
+      gap: 20px; /* Adjust the gap between elements */
+
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .signUp-form {
+      max-width: 375px;
+
+      margin-left: 0px;
+    }
+
+    input {
+      font-size: 14px; /* Adjust font size */
+      width: 94%;
+      /* margin-right: 7rem; */
+    }
+
+    .discription {
+      /* max-width: 350px !important; */
+      width: 375px; /* Occupy full width */
+      background-size: cover; /* Adjust background size */
+    }
+
+    h2 {
+      width: 200px;
+      display: none;
+    }
+    img {
+      /* display: none; */
+      height: 138px;
+    }
+    .main {
+      height: 100px;
+      margin-top: 120px; /* Adjust margin top */
+      transform: translateX(-0.1); /* Reset transform */
+      margin-right: 3rem;
+    }
+
+    .main-span {
+      font-size: 14px; /* Adjust font size */
+      display: none;
+    }
+
+    .footer-icon {
+      gap: 0.5rem; /* Adjust the gap between icons */
+    }
+
+    .icon-box1 {
+      width: 25%; /* Adjust the width of icon boxes */
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 642px) {
+    .form {
+      gap: 20px;
+      /* display: grid; */
+      /* gap: 0.5rem; */
+      /* grid-template-columns: repeat(1fr); */
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .signUp-form {
+      width: 300px;
+    }
+
+    input {
+      font-size: 14px; /* Adjust font size */
+      width: 94%;
+      /* margin-right: 7rem; */
+    }
+
+    .discription {
+      /* max-width: 350px !important; */
+      width: 300px; /* Occupy full width */
+      background-size: cover; /* Adjust background size */
+    }
+
+    h2 {
+      width: 200px;
+      display: none;
+    }
+    img {
+      /* display: none; */
+      height: 138px;
+    }
+    .main {
+      height: 100px;
+      margin-top: 120px; /* Adjust margin top */
+      transform: translateX(-0.1); /* Reset transform */
+      margin-right: 3rem;
+    }
+
+    .main-span {
+      font-size: 14px; /* Adjust font size */
+      display: none;
+    }
+
+    .footer-icon {
+      gap: 0.5rem; /* Adjust the gap between icons */
+    }
+
+    .icon-box1 {
+      width: 25%; /* Adjust the width of icon boxes */
+    }
+  }
 `;
+
+/** */
