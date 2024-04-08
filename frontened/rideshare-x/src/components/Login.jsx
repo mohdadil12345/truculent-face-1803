@@ -33,7 +33,7 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         localStorage.setItem("token", res.data.token);
-        // alert("Login sucessful!");
+    
         toast({
           title: "Login Sucessful!",
           position: "top",
