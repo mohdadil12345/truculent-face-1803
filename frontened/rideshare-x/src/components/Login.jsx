@@ -83,7 +83,10 @@ function Login() {
             onClick={handleSubmit}
           />
 
-          <a href="/#">Go Back</a>
+     
+        <a href="/register">Create Account</a>
+  
+
         </div>
         <div className="discription">
           <div className="main">
@@ -180,7 +183,7 @@ const SECTION = styled.div`
     cursor: pointer;
   }
   a {
-    color: rgb(6, 122, 70);
+    color: rgb(28, 42, 143);
   }
   .discription {
     background-image: url("/assets/login-background.png");
@@ -247,8 +250,9 @@ const SECTION = styled.div`
   .icon-box1 {
     width: 30%;
   }
-  a {
-    color: rgb(3, 86, 36);
+
+  p{
+    color:blue
   }
 
   /*Large screen */
@@ -298,7 +302,7 @@ const SECTION = styled.div`
       cursor: pointer;
     }
     a {
-      color: rgb(6, 122, 70);
+      color: rgb(28, 42, 143);
     }
     .discription {
       background-image: url("/assets/login-background.png");
@@ -367,7 +371,7 @@ const SECTION = styled.div`
       width: 20%;
     }
     a {
-      color: rgb(3, 86, 36);
+      color: rgb(28, 42, 143);
     }
   }
 

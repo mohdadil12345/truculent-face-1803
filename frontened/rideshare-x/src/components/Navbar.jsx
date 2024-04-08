@@ -2,12 +2,13 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthContext/AuthContextProvider";
 import { Avatar, Button } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 
 function Navbar() {
 
   const [displ, setdisp] = useState(true)
   const [displ_btn, setdisp_btn] = useState(true)
-
+  const toast = useToast();
   const {isAuth, usename} = useContext(AuthContext)
 
   console.log(usename);
@@ -18,7 +19,13 @@ function Navbar() {
   }
 
   const logoutuser = () => {
-    alert("logoutsuccess")
+    toast({
+      title: "Logout Sucessful!",
+      position: "top",
+      status: "success",
+      duration: 1200,
+      isClosable: true,
+    });
     localStorage.removeItem("token");
       window.location.href = '/'
   }
@@ -33,18 +40,21 @@ function Navbar() {
 
       <button className="menu-btn"  onClick={toggle}>{displ_btn? <i class="fa-solid fa-bars"></i> : <i class="fa-solid fa-xmark"></i>}</button>
 
-  
+
 
       </div>
       <div className="nav-menu" id= {displ ? "close" : "open"}>
         <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
         <Link to="/plan">Plan</Link>
-        {isAuth ? null : <Link to="/register">Signup</Link>}
+        {/* {isAuth ? null : <Link to="/register">Signup</Link>} */}
       </div>
 
       <div className="logbtn">
-      {isAuth ? (<span style={{display:'flex', alignItems:'center', gap:'20px', fontWeight:'bold'}}><Avatar id="username" color='white' size='sm' name={usename} src='https://bit.ly/tioluwani-kolawole' /><h2 id="username">{usename}</h2><Button width={'100px'} colorScheme="green" size="md" variant="outline" onClick={logoutuser}>Logout</Button></span> ) :( <Button width={'100px'} colorScheme="red" size="md" variant="outline"><Link to="/login">Login</Link></Button>)}
+      {isAuth ? (<span style={{display:'flex', alignItems:'center', gap:'20px', fontWeight:'bold'}}><Avatar id="username" color='white' 
+      size='sm' name={usename} src='https://bit.ly/tioluwani-kolawole' /><h2 id="username">{usename}</h2>
+      <Button width={'100px'} colorScheme="green" size="md" variant="outline" onClick={logoutuser}>Logout</Button></span> ) 
+      :( <Button width={'100px'} colorScheme="red" size="md" variant="outline"><Link to="/login">Login</Link></Button>)}
       </div>
     </div>
   );

@@ -3,11 +3,13 @@ import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext/AuthContextProvider";
+import { useToast } from "@chakra-ui/react";
 
 function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+  const toast = useToast();
 
   const navigate = useNavigate();
 
@@ -33,12 +35,24 @@ function Signup() {
       )
       .then((res) => {
         console.log(res.data);
-        alert("You are now registered");
+        toast({
+          title: "Resgistration Sucessful!",
+          position: "top",
+          status: "success",
+          duration: 1200,
+          isClosable: true,
+        });
         signup(newUser.username)
         navigate("/login");
       })
       .catch((err) => {
-        console.log(err);
+        toast({
+          title: "Some thing wrong Try again!",
+          position: "top",
+          status: "error",
+          duration: 1200,
+          isClosable: true,
+        });
       });
   };
   return (
