@@ -35,7 +35,7 @@ function Signup() {
       )
       .then((res) => {
         console.log(res.data);
-        HEAD;
+   
         toast({
           title: "Resgistration Sucessful!",
           position: "top",
