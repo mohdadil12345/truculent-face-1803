@@ -22,7 +22,7 @@ function Signup() {
       email,
       password,
     };
-    // console.log(newUser);
+
     axios
       .post(
         "https://ride-share-backend-pw1v.onrender.com/users/register",
@@ -35,7 +35,7 @@ function Signup() {
       )
       .then((res) => {
         console.log(res.data);
- HEAD
+        HEAD;
         toast({
           title: "Resgistration Sucessful!",
           position: "top",
@@ -43,7 +43,7 @@ function Signup() {
           duration: 1200,
           isClosable: true,
         });
-        signup(newUser.username)
+        signup(newUser.username);
         navigate("/login");
       })
       .catch((err) => {
@@ -152,7 +152,7 @@ const SECTION = styled.div`
     gap: 80px;
   }
   .signUp-form {
-    text-align: center; /* Center-align elements within .form */
+    text-align: center;
     min-width: 500px;
     height: auto;
     padding: 25px;
@@ -165,8 +165,8 @@ const SECTION = styled.div`
     margin-bottom: 48px;
   }
   input {
-    width: 100%; /* Make the inputs take the full width of the container */
-    padding: 10px; /* Add some padding for spacing */
+    width: 100%;
+    padding: 10px;
     margin: 5px 0;
     font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
     font-size: 16px;
@@ -270,7 +270,7 @@ const SECTION = styled.div`
       gap: 90px;
     }
     .signUp-form {
-      text-align: center; /* Center-align elements within .form */
+      text-align: center;
       min-width: 400px;
       height: auto;
       padding: 25px;
@@ -283,8 +283,8 @@ const SECTION = styled.div`
       margin-bottom: 48px;
     }
     input {
-      width: 100%; /* Make the inputs take the full width of the container */
-      padding: 10px; /* Add some padding for spacing */
+      width: 100%;
+      padding: 10px;
       margin: 5px 0;
       font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
       font-size: 16px;
@@ -328,7 +328,6 @@ const SECTION = styled.div`
     }
 
     img {
-      /* position: absolute; */
       height: 83%;
       width: 100%;
       left: 0;
@@ -391,7 +390,7 @@ const SECTION = styled.div`
       grid-template-columns: repeat(1fr);
     }
     .signUp-form {
-      text-align: center; /* Center-align elements within .form */
+      text-align: center;
       width: 600px;
       height: auto;
       padding: 25px;
@@ -405,8 +404,8 @@ const SECTION = styled.div`
       margin-bottom: 48px;
     }
     input {
-      width: 100%; /* Make the inputs take the full width of the container */
-      padding: 10px; /* Add some padding for spacing */
+      width: 100%;
+      padding: 10px;
       margin: 5px 0;
       font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
       font-size: 16px;
@@ -508,51 +507,51 @@ const SECTION = styled.div`
 
   @media screen and (min-width: 425px) and (max-width: 642px) {
     .form {
-      gap: 20px; /* Adjust the gap between elements */
-      margin-left: 20px; /* Adjust the left margin */
+      gap: 20px;
+      margin-left: 20px;
     }
 
     .signUp-form {
-      max-width: 400px; /* Limit the maximum width */
-      width: 100%; /* Occupy full width */
-      padding: 15px; /* Adjust padding */
-      margin-top: 32px; /* Adjust margin top */
+      max-width: 400px;
+      width: 100%;
+      padding: 15px;
+      margin-top: 32px;
       margin-bottom: 24px;
     }
 
     input {
-      font-size: 14px; /* Adjust font size */
+      font-size: 14px;
     }
 
     .discription {
-      width: 100%; /* Occupy full width */
-      background-size: cover; /* Adjust background size */
+      width: 100%;
+      background-size: cover;
     }
     h2 {
       width: 200px;
     }
     .main {
-      margin-top: 100px; /* Adjust margin top */
-      transform: translateX(0); /* Reset transform */
+      margin-top: 100px;
+      transform: translateX(0);
     }
 
     .main-span {
-      font-size: 14px; /* Adjust font size */
+      font-size: 14px;
     }
 
     .footer-icon {
-      gap: 0.5rem; /* Adjust the gap between icons */
+      gap: 0.5rem;
     }
 
     .icon-box1 {
-      width: 25%; /* Adjust the width of icon boxes */
+      width: 25%;
     }
   }
 
   /* Screen size between 375px and 642px */
   @media screen and (min-width: 375px) and (max-width: 642px) {
     .form {
-      gap: 20px; /* Adjust the gap between elements */
+      gap: 20px;
 
       margin-left: 0px;
       margin-right: 0px;
@@ -565,15 +564,13 @@ const SECTION = styled.div`
     }
 
     input {
-      font-size: 14px; /* Adjust font size */
+      font-size: 14px;
       width: 94%;
-      /* margin-right: 7rem; */
     }
 
     .discription {
-      /* max-width: 350px !important; */
-      width: 375px; /* Occupy full width */
-      background-size: cover; /* Adjust background size */
+      width: 375px;
+      background-size: cover;
     }
 
     h2 {
@@ -581,31 +578,29 @@ const SECTION = styled.div`
       display: none;
     }
     img {
-      /* display: none; */
       height: 138px;
     }
     .main {
       height: 100px;
-      margin-top: 120px; /* Adjust margin top */
-      transform: translateX(-0.1); /* Reset transform */
+      margin-top: 120px;
+      transform: translateX(-0.1);
       margin-right: 3rem;
     }
 
     .main-span {
-      font-size: 14px; /* Adjust font size */
+      font-size: 14px;
       display: none;
     }
 
     .footer-icon {
-      gap: 0.5rem; /* Adjust the gap between icons */
+      gap: 0.5rem;
     }
 
     .icon-box1 {
-      width: 25%; /* Adjust the width of icon boxes */
+      width: 25%;
     }
   }
 
-  /* Screen size between 375px and 642px */
   @media screen and (min-width: 320px) and (max-width: 642px) {
     .form {
       /* gap: 20px;  */
@@ -621,15 +616,13 @@ const SECTION = styled.div`
     }
 
     input {
-      font-size: 14px; /* Adjust font size */
+      font-size: 14px;
       width: 94%;
-      /* margin-right: 7rem; */
     }
 
     .discription {
-      /* max-width: 350px !important; */
-      width: 300px; /* Occupy full width */
-      background-size: cover; /* Adjust background size */
+      width: 300px;
+      background-size: cover;
     }
 
     h2 {
@@ -637,27 +630,26 @@ const SECTION = styled.div`
       display: none;
     }
     img {
-      /* display: none; */
       height: 138px;
     }
     .main {
       height: 100px;
-      margin-top: 120px; /* Adjust margin top */
-      transform: translateX(-0.1); /* Reset transform */
+      margin-top: 120px;
+      transform: translateX(-0.1);
       margin-right: 3rem;
     }
 
     .main-span {
-      font-size: 14px; /* Adjust font size */
+      font-size: 14px;
       display: none;
     }
 
     .footer-icon {
-      gap: 0.5rem; /* Adjust the gap between icons */
+      gap: 0.5rem;
     }
 
     .icon-box1 {
-      width: 25%; /* Adjust the width of icon boxes */
+      width: 25%;
     }
   }
 `;
